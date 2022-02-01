@@ -1,0 +1,147 @@
+// Swiper css
+
+.swiper {
+  width: 100%;
+  height: 591px;
+
+  .container-text-swiper {
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include font;
+
+    h1 {
+      margin-top: 50px;
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    .line-blue {
+      width: 64px;
+      height: 2px;
+      background: url("../images/blueline.png") 0% 0% no-repeat padding-box;
+    }
+
+  }
+
+  .swiper-pagination-bullet{
+    border: 1px solid $darksalmon;
+    background: $white;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $darksalmon;
+    border: 1px solid $darksalmon;
+  }
+
+  .container-review {
+    @include font;
+    margin-bottom: 150px;
+
+    .container-comment{
+      width: 273px;
+      // height: 147px;
+
+      .cloud-two {
+        border-radius: 0 0 8px 8px;
+        display: flex;
+        align-items: center;
+        margin-left: 31px;
+        width: 273px;
+        height: 125px;
+        background: url("../images/cloud.png") 0% 0% no-repeat padding-box;
+
+        p {
+          text-align: left;
+          line-height: 1.4;
+          padding: 15px;
+          font-size: 16px;
+          font-weight: 300;
+          color: $white;
+        }
+
+        }
+
+        .triangle-two {
+          z-index: -1;
+          position: relative;
+          bottom: 24px;
+          margin-left: 61px;
+          width: 28px;
+          height: 28px;
+          background: $blue;
+          transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      }
+
+      .cloud {
+        display: flex;
+        align-items: center;
+        margin-left: 31px;
+        width: 273px;
+        height: 147px;
+        background: url("../images/cloud.png") 0% 0% no-repeat padding-box;
+
+        p {
+          text-align: left;
+          line-height: 1.4;
+          padding: 15px;
+          font-size: 16px;
+          font-weight: 300;
+          color: $white;
+        }
+      }
+
+      .triangle {
+        z-index: -1;
+        position: relative;
+        bottom: 24px;
+        margin-left: 53px;
+        width: 28px;
+        height: 28px;
+        background: $blue;
+        transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+
+      }
+    }
+
+    .container-person-text {
+      display: flex;
+      align-content: center;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      width: 273px;
+      height: 147px;
+
+        .person {
+          width: 70px;
+          height: 70px;
+          background: url("../images/person.png") 0% 0% no-repeat padding-box;
+      }
+
+      .details {
+
+        h3 {
+          color: $black;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 2;
+        }
+
+        p {
+          color: $grey;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

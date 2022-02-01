@@ -1,0 +1,210 @@
+@media (max-width: 780px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  // Header and navigation bar
+  .nav-top {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+
+  .nav-top a:nth-of-type(1) {
+    display: none;
+  }
+  .nav-top a:nth-of-type(2) {
+    display: none;
+  }
+  .nav-top a:nth-of-type(3) {
+    display: none;
+  }
+  .nav-top a:nth-of-type(4) {
+    display: none;
+  }
+  .nav-top a:nth-of-type(5) {
+    display: none;
+  }
+
+  .side-nav {
+    height: 100vh;
+  }
+
+  #burger {
+    display: block;
+    margin-right: 30px;
+    align-self: flex-end;
+  }
+
+  // City section
+  .container-city {
+    height: 180vh;
+
+    .container-flex {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 180vh;
+    }
+
+    .container-home-text {
+      height: 500px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      h1 {
+        margin-top: 50px;
+        width: 80%;
+        text-align: center;
+        }
+
+      p {
+        width: 80%;
+        text-align: center;
+        margin-top: 50px;
+        }
+    }
+  }
+  // Subscription
+  .subscription {
+    margin-bottom: 50px;
+    margin-right: 0px;
+  }
+  // Social section
+  .nav-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40vh;
+
+    .container-text {
+      height: 20vh;
+      width: 60%;
+      align-items: center;
+      justify-content: space-around;
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .container-social-bigger {
+      width: 80%;
+    }
+  }
+  // Tabs section
+  .container-mountains-flex {
+    flex-direction: column;
+    align-items: stretch;
+    height: 160vh;
+
+    .swiper2 {
+      height: 120vh;
+      overflow: hidden;
+    }
+
+    .tabs {
+      width: 100%;
+      justify-content: space-evenly;
+      flex-direction: row;
+      margin-left: 0px;
+      margin-top: 50px;
+    }
+
+    .text-tab-flex {
+      flex-direction: row;
+      width: 80%;
+      text-align: center;
+    }
+
+    .photo-flex {
+      margin-top: 50px;
+      margin-left: 0px;
+    }
+  }
+  // Black section
+  .container-black {
+    width: 100%;
+    height: 140vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container-main-logo {
+      width:100%;
+      height: 0;
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+
+    .container-text-black {
+      width: 80%;
+      align-items: center;
+      justify-content: space-evenly;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
+
+    .container-brand {
+      margin-left: 220px;
+      align-items: center;
+
+      .brand {
+        width: 100%;
+      }
+    }
+  }
+  // Review section
+  .container-white {
+    height: 160vh;
+
+    .container-text-white {
+      justify-content: space-between;
+    }
+
+    .container-benefits {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100vh
+    }
+  }
+  // Price section
+  .container-blue {
+    height: 300vh;
+
+    .container-text-blue {
+      justify-content: space-around;
+    }
+    .container-price {
+      flex-direction: column;
+      align-items: center;
+      height: 300vh;
+    }
+  }
+  // Review section
+  .swiper {
+
+    .container-text-swiper {
+      text-align: center;
+    }
+  }
+  // Footer
+  .nav-bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .container-rights {
+        width: 100%;
+    }
+  }
+
+}

@@ -1,0 +1,105 @@
+.container-white {
+  width: 100%;
+  height: 592px;
+  background: $white 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  
+  // Main section text
+  .container-text-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 100%;
+    height: 300px;
+
+    h1 {
+      margin-top: 60px;
+      font-size: 36px;
+      font-weight: 600;
+      @include font;
+      color: $black;
+    }
+
+    .line-darksalmon {
+      width: 64px;
+      height: 2px;
+      background: transparent url("../images/linedarksalmon.png") 0% 0% no-repeat padding-box;
+    }
+
+    p {
+      font-size: 14px;
+      @include font;
+      color: $grey;
+      margin-bottom: 50px;
+    }
+  }
+    // Icon style and their discription
+  .container-benefits {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+    .benefits {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 286px;
+      height: 194px;
+      @include font;
+
+      .circle {
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        border: 1px solid $darksalmon;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .icon-one {
+          width: 22px;
+          height: 27px;
+          background: url("../images/award-solid.svg") 0% 0% no-repeat padding-box;
+        }
+
+        .icon-two {
+          width: 28px;
+          height: 23px;
+          background: url("../images/spa-solid.svg") 0% 0% no-repeat padding-box;
+        }
+
+        .icon-three {
+          width: 28px;
+          height: 23px;
+          background: url("../images/cc-visa-brands.svg") 0% 0% no-repeat padding-box;
+        }
+
+      }
+
+      .title {
+
+        p {
+          font-size: 20px;
+          text-align: center;
+          color: $black;
+        }
+      }
+
+      .info-benefits {
+
+        p {
+          font-size: 14px;
+          text-align: center;
+          color: $grey;
+        }
+      }
+
+    }
+  }
+}

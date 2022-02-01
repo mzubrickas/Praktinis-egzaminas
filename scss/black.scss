@@ -1,0 +1,133 @@
+.container-black {
+  width: 100%;
+  height: 596px;
+  background: $black 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+
+  // Main logo style
+  .container-main-logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+
+
+      .logo-main {
+        width: 389px;
+        height: 169px;
+        background: transparent url("../images/mainlogoblack.svg") 0% 0% no-repeat padding-box;
+      }
+  }
+  // Main section text
+  .container-text-black {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 36%;
+    height: 200px;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+      @include font;
+      color: $white;
+    }
+
+    .line-darksalmon-longer {
+      width: 200px;
+      height: 2px;
+      background: transparent url("../images/mainlineorange.svg") 0% 0% no-repeat padding-box;
+    }
+
+    p {
+      font-size: 14px;
+      @include font;
+      color: $white;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+  // Icon style and their discription
+  .container-brand {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 160px;
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap ;
+      align-content: flex-start;
+      align-items: center;
+      width: 50%;
+      height: 50px;
+      @include font;
+
+      .circle-br {
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        background: $darksalmon 0% 0% no-repeat padding-box;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .icon-one-br {
+          width: 28px;
+          height: 23px;
+          background: url("../images/eye-regular.svg") 0% 0% no-repeat padding-box;
+        }
+
+        .icon-two-br {
+          width: 26px;
+          height: 24px;
+          margin-left: 2px;
+          background: url("../images/comment-regular.svg") 0% 0% no-repeat padding-box;
+        }
+
+      }
+
+      .container-fix {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+
+        .title-br {
+
+          p {
+            font-size: 14px;
+            text-align: center;
+            line-height: 2;
+            font-weight: 600;
+            color: $white;
+          }
+        }
+
+        .info-br {
+
+          p {
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: left;
+            font-weight: 400;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

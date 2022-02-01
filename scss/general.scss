@@ -1,0 +1,14 @@
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+// HTML scroll
+ html {
+   scroll-behavior: smooth;
+ }
+
+// Customized cursor
+.cursor {
+  cursor: url("../images/description-cursor-icon-with-shadow-32.png"), auto;
+}

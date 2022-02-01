@@ -1,0 +1,109 @@
+  // Top navigation meniu
+.nav-top {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    line-height: 70px;
+    top: 0px;
+    width: 100%;
+    height: 72px;
+    background: $black;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 10;
+    overflow: hidden;
+
+    .container-logo  {
+      display: flex;
+      align-items: center;
+      width: 40%;
+    }
+
+
+    .logo {
+      width: 119px;
+      height: 52px;
+      background:  url("../images/cheshire-county-hygiene-services.svg") 0% 0% no-repeat padding-box;
+    }
+
+    .container-a {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 30%;
+
+      a {
+
+        font-size: 14px;
+        text-decoration: none;
+        color: $white;
+        opacity: 0.69;
+        transition: 0.2s;
+
+
+        &:hover {
+          color: $white;
+          border-bottom: 3px solid $darksalmon;
+          opacity: 1;
+
+
+        }
+
+        &:hover:last-of-type {
+          color: $white;
+          opacity: 0.69;
+          border:none;
+        }
+      }
+    }
+  }
+  // Side navigation meniu
+.side-nav {
+  z-index: 11;
+  position: fixed;
+  top: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  transform: translateX(-200px);
+  background: $black;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  transition: 0.5s;
+
+  a {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: $white;
+    opacity: 0.69;
+
+
+      &:hover {
+      color: $darksalmon;
+      opacity: 1;
+
+    }
+
+  }
+}
+
+ // Adding class to JavaScript needed to function with burger and side navigation bar
+.rotateZ {
+  transform: rotateZ(-90deg);
+}
+
+.width {
+  transform: translateX(0);
+}
+
+// Burger styling
+#burger {
+  display: none;
+  color: $darksalmon;
+  font-size: 2em;
+  transition: transform 0.3s;
+  opacity: 1;
+}

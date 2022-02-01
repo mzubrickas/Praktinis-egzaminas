@@ -1,0 +1,22 @@
+// Footer (.nav-bottom)
+@mixin social-size {
+  height: 20px;
+  width: 20px;
+}
+
+// Social media (.nav-inside)
+@mixin social-size2 {
+  height: 30px;
+  width: 30px;
+}
+
+// Font for all
+@mixin font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// Card inside data sizes
+@mixin card-info {
+  width: 343px;
+  height: 40px;
+}
